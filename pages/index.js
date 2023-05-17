@@ -1,3 +1,4 @@
+import { DefaultLayout } from '../components/layout'
 import {
   ARLayout,
   FAQ,
@@ -10,7 +11,7 @@ import {
 
 export default function Home() {
   return (
-    <>
+    <DefaultLayout title="PPSMB UGM 2023">
       <Hero />
       <Welcome />
       <Rangkaian />
@@ -18,6 +19,6 @@ export default function Home() {
       <Palapedia />
       <ARLayout />
       <FAQ />
-    </>
+    </DefaultLayout>
   )
 }

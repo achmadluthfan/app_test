@@ -1,3 +1,5 @@
+/* eslint-disable react/prop-types */
+/* eslint-disable react/jsx-props-no-spreading */
 /* eslint-disable import/no-unresolved */
 import '../styles/globals.css'
 import 'swiper/css'
@@ -7,7 +9,7 @@ import 'swiper/css/pagination'
 import Head from 'next/head'
 import Script from 'next/script'
 
-function MyApp() {
+function MyApp({ Component, pageProps }) {
   return (
     <>
       {/* Add the favicon */}
@@ -26,6 +28,7 @@ function MyApp() {
           gtag('config', 'G-0V1HL98QPD');
         `}
       </Script>
+      <Component {...pageProps} />
     </>
   )
 }

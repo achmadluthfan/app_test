@@ -9,7 +9,7 @@ export function DefaultLayout({ children, title }) {
       </Head>
 
       <header>
-        <div />
+        <div>Navbar</div>
       </header>
       <main>{children}</main>
     </>
