@@ -1,6 +1,8 @@
 import Head from 'next/head'
 import PropTypes from 'prop-types'
 
+import { Navbar } from './Navbar'
+
 export function DefaultLayout({ children, title }) {
   return (
     <>
@@ -9,7 +11,7 @@ export function DefaultLayout({ children, title }) {
       </Head>
 
       <header>
-        <div>Navbar</div>
+        <Navbar />
       </header>
       <main>{children}</main>
     </>
