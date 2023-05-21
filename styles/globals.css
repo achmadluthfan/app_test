@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;700;800&family=Poppins:wght@100;400;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Scroll Bar Syle */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1f2326;
+}
+::-webkit-scrollbar-thumb {
+  background: #05c2fc;
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #00769a;
+}
+/* Scroll Bar Syle */
+
+/* react-slick style */
+.slick-slide {
+  padding: 0 10px;
+}
+
+.slick-list {
+  margin: 0 -10px;
+}
+/* react-slick style */
+
+/* Change the white to any color */
+input:-webkit-autofill {
+  -webkit-text-fill-color: #a5a9ad !important;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px #2b3a46 inset !important;
+}
