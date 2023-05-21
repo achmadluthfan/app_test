@@ -245,7 +245,9 @@ export function Welcome() {
         <Image src="/assets/logo.png" alt="" height={300} width={300} className="mx-auto block" />
         <div className="flex flex-col items-center justify-center lg:items-start">
           <h1 className="font-rubik text-3xl font-medium text-blue-900">Tentang PPSMB</h1>
-          <h1 className="font-damion text-5xl font-medium text-blue-400">Pionir Gadjah Mada</h1>
+          <h1 className="text-center font-damion text-5xl font-medium text-blue-400">
+            Pionir Gadjah Mada
+          </h1>
           <p className="py-5 text-center font-rubik text-blue-900 lg:text-justify xl:w-4/5">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie,
             dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem
@@ -254,7 +256,7 @@ export function Welcome() {
             nostra, per inceptos himenaeos. Praesent auctor purus luctus enim egestas, ac
             scelerisque ante pulvinar.
           </p>
-          <button className="w-1/2 rounded-xl border-2 border-orange-500 bg-orange-500 px-5 py-3 font-rubik font-bold text-white duration-300 hover:border-2 hover:border-orange-500 hover:bg-white hover:text-orange-500 md:text-xl xl:text-2xl">
+          <button className="w-1/2 rounded-xl border-2 border-orange-500 bg-orange-500 px-5 py-3 font-rubik text-[12px] font-bold text-white duration-300 hover:border-2 hover:border-orange-500 hover:bg-white hover:text-orange-500 md:text-xl xl:text-2xl sm:text-[24px]">
             Lihat Selengkapnya
           </button>
         </div>
