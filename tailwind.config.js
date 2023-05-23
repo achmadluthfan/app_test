@@ -7,6 +7,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        rubik: ['Rubik'],
+        damion: ['Damion']
+      },
       colors: {
         neutral: {
           0: 'FFFFFF',
