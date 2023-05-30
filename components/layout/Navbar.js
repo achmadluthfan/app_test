@@ -35,7 +35,7 @@ export function Navbar() {
     setYOffset(currentYOffset)
     setVisible(naik)
     setDropDown(dropDown && visible)
-    setdropDownChild(dropDownChild && visible)
+    setdropDownChild(dropDownChild.map((item) => item && visible))
   }
 
   const router = useRouter()
@@ -51,40 +51,40 @@ export function Navbar() {
       key: 'Beranda',
     },
     {
-      path: '/Kegiatan',
+      path: '/kegiatan',
       name: 'Kegiatan',
       key: 'Kegiatan',
       num: 0,
       children: [
         {
           name: 'Agenda',
-          value: 'Agenda',
+          value: 'agenda',
           key: 'Agenda',
         },
         {
           name: 'Atribut',
-          value: 'Atribut',
+          value: 'atribut',
           key: 'Atribut',
         },
         {
           name: 'Ketentuan',
-          value: 'Ketentuan',
+          value: 'ketentuan',
           key: 'Ketentuan',
         },
         {
           name: 'Panduan',
-          value: 'Panduan',
+          value: 'panduan',
           key: 'Panduan',
         },
       ],
     },
     {
-      path: '/Sesuatu',
+      path: '/sesuatu',
       name: 'Sesuatu',
       key: 'Sesuatu',
     },
     {
-      path: '/Palapedia',
+      path: '/palapedia',
       name: 'Palapedia',
       key: 'Palapedia',
     },
@@ -153,6 +153,7 @@ export function Navbar() {
                     lg:pt-0"
           >
             {routes.map((route) => {
+              // untuk route yang dropdown
               if (route.children !== undefined) {
                 return (
                   <li key={route.key}>
@@ -210,7 +211,7 @@ export function Navbar() {
                             <Link
                               href={`${route.path}/${child.value}`}
                               className="hover:text-c-01 text-md font-poppins block px-4 py-2 font-semibold"
-                              onClick={() => setdropDownChild(false)}
+                              onClick={() => setdropDownChild(dropDownChild.map(() => false))}
                             >
                               {child.name}
                             </Link>
@@ -222,6 +223,7 @@ export function Navbar() {
                 )
               }
 
+              // untuk route yang tidak dropdown
               return (
                 <li key={route.key}>
                   <Link href={route.path} className="flex justify-center py-2 md:p-4">
