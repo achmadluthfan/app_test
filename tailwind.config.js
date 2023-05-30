@@ -9,7 +9,7 @@ module.exports = {
     extend: {
       fontFamily: {
         rubik: ['Rubik'],
-        damion: ['Damion']
+        damion: ['Damion'],
       },
       colors: {
         neutral: {
@@ -91,6 +91,16 @@ module.exports = {
           600: '#7A2EE5',
           700: '#8754C1',
           900: '#4C1C82',
+        },
+      },
+      keyframes: {
+        kotakWiggle: {
+          '0%, 9.5%, 19.5%, 100%': { transform: 'translateY(0%) rotate(0deg)' },
+          '11.5%, 12.5%, 13.5%, 14.5%, 15.5%, 16.5%, 17.5%': {
+            transform: 'translateY(-5%) rotate(0deg)',
+          },
+          '13%, 15%': { transform: 'translateY(-5%) rotate(-3deg)' },
+          '14%, 16%': { transform: 'translateY(-5%) rotate(3deg)' },
         },
       },
     },
