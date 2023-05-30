@@ -24,7 +24,7 @@ export function Kegiatan() {
     'Panduan',
   ]
   return (
-    <div className="h-[100vh] w-full bg-green-500 px-[3%] pt-[30px] lg:px-[5%]">
+    <div className="h-[100vh] w-full bg-green-500 px-[3%] pt-[80px] lg:px-[5%]">
       <div className="w-full rounded-[10px] bg-white px-[4%] py-[10px] font-rubik text-green-900 lg:hidden">
         Search
       </div>
