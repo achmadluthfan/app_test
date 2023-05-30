@@ -35,7 +35,7 @@ export function Kegiatan({ active }) {
           </div>
           {menus.map((menu) => (
             <div
-              key={menu}
+              key={menu.path}
               className={`${menu.name[0] === '_' ? 'ml-[15px] mt-[10px]' : 'mt-[16px]'}`}
             >
               <Link href={`/kegiatan/${menu.path}`}>
