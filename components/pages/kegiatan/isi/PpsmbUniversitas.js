@@ -143,9 +143,7 @@ export function PpsmbUniversitas() {
           Hari Kedua
         </Button>
       </div>
-      <div
-        className={`${active === 0 ? '' : 'hidden'} relative h-[100vh] w-full overflow-y-scroll`}
-      >
+      <div className={`${active === 0 ? '' : 'hidden'} relative h-[50vh] w-full overflow-y-scroll`}>
         {HariPertama.map(({ time, agenda }) => {
           return (
             <div className="mx-[10px] my-[15px] flex flex-row  items-center justify-between rounded-[8px] bg-neutral-50 px-[10px] py-[14px] lg:mx-[30px] lg:mb-[15px] lg:mt-[16px] lg:px-[30px]">
@@ -193,9 +191,7 @@ export function PpsmbUniversitas() {
           )
         })}
       </div>
-      <div
-        className={`${active === 1 ? '' : 'hidden'} relative h-[100vh] w-full overflow-y-scroll`}
-      >
+      <div className={`${active === 1 ? '' : 'hidden'} relative h-[50vh] w-full overflow-y-scroll`}>
         {HariKedua.map(({ time, agenda }) => {
           return (
             <div className="mx-[10px] my-[15px] flex flex-row  items-center justify-between rounded-[8px] bg-neutral-50 px-[10px] py-[14px] lg:mx-[30px] lg:mb-[15px] lg:mt-[16px] lg:px-[30px]">

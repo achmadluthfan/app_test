@@ -50,7 +50,7 @@ export function Kegiatan({ active }) {
             </div>
           ))}
         </div>
-        <div className="relative h-[100vh] w-full overflow-hidden rounded-[12px] bg-white lg:rounded-[20px]">
+        <div className="relative h-full w-full overflow-hidden rounded-[12px] bg-white lg:rounded-[20px]">
           {active === 'agenda' && <Agenda />}
           {active === 'ppsmb-universitas' && <PpsmbUniversitas />}
           {active === 'ppsmb-fakultas' && <PpsmbFakultas />}

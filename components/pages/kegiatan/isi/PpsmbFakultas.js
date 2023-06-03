@@ -148,7 +148,7 @@ export function PpsmbFakultas() {
           Fakultas/Sekolah.
         </p>
       </div>
-      <div className="relative grid max-h-[70vh] grid-cols-2 overflow-y-scroll lg:max-h-[60vh] lg:grid-cols-3">
+      <div className="relative grid max-h-[70vh] grid-cols-2 overflow-y-scroll md:grid-cols-3 lg:max-h-[60vh]">
         {data.map(({ image, nama, fakultas }) => {
           return (
             <div className="mb-[10px] ml-[10px] flex flex-col items-center justify-between rounded-[20px] bg-neutral-50 px-[6px] py-[6px] font-rubik font-medium lg:mb-[15px] lg:ml-[30px] lg:mr-[15px] lg:mt-[16px] lg:px-[30px]">

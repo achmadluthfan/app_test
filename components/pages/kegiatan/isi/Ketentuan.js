@@ -34,7 +34,7 @@ export function Ketentuan() {
       </div>
       {data.map(({ title, link }) => {
         return (
-          <div className="mx-[10px] my-[15px] flex flex-row  items-center justify-between bg-neutral-50 px-[10px] py-[14px] lg:mx-[30px] lg:mb-[15px] lg:mt-[16px] lg:px-[30px]">
+          <div className="mx-[10px] my-[15px] flex flex-row  items-center justify-between rounded-[12px] bg-neutral-50 px-[10px] py-[14px] lg:mx-[30px] lg:mb-[15px] lg:mt-[16px] lg:px-[30px]">
             <div className="flex flex-row items-center gap-x-[10px] lg:gap-x-[30px]">
               <svg
                 width="12"
