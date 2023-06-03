@@ -24,7 +24,7 @@ export function Kegiatan({ active }) {
     { name: 'Panduan', path: 'panduan' },
   ]
   return (
-    <div className="h-[100vh] w-full bg-green-500 px-[3%] pt-[80px] lg:px-[5%]">
+    <div className="h-full w-full bg-green-500 px-[3%] pt-[80px] lg:px-[5%]">
       <div className="w-full rounded-[10px] bg-white px-[4%] py-[10px] font-rubik text-green-900 lg:hidden">
         Search
       </div>
@@ -41,7 +41,7 @@ export function Kegiatan({ active }) {
               <Link href={`/kegiatan/${menu.path}`}>
                 <button
                   type="button"
-                  className="h-full w-full rounded-[8px] px-[4%] py-[10px] text-left text-left font-rubik text-white disabled:bg-green-500 disabled:text-green-900"
+                  className="h-full w-full rounded-[8px] px-[4%] py-[10px] text-left font-rubik text-white disabled:bg-green-500 disabled:text-green-900"
                   disabled={active === menu.path}
                 >
                   {menu.name[0] === '_' ? menu.name.slice(1) : menu.name}
@@ -50,7 +50,7 @@ export function Kegiatan({ active }) {
             </div>
           ))}
         </div>
-        <div className="h-full w-full rounded-[12px] bg-white lg:rounded-[20px]">
+        <div className="relative h-[100vh] w-full overflow-hidden rounded-[12px] bg-white lg:rounded-[20px]">
           {active === 'agenda' && <Agenda />}
           {active === 'ppsmb-universitas' && <PpsmbUniversitas />}
           {active === 'ppsmb-fakultas' && <PpsmbFakultas />}

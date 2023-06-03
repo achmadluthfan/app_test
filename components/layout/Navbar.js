@@ -119,7 +119,7 @@ export function Navbar() {
       } z-[9999] w-[100vw]`}
       style={visible ? styles.active : styles.hidden}
     >
-      <div className="container mx-auto flex flex-wrap items-center justify-between lg:justify-around">
+      <div className=" mx-auto flex flex-wrap items-center justify-between lg:justify-around">
         <Link href="/" className="flex flex-row">
           {/* <div className="flex w-2/3 md:h-full md:w-full  ">
             <Image src="/PPSMB.png" alt="PPSMB Logo" width={146.33} height={43} />

@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import { useState } from 'react'
+
 export function Welcome() {
   const [active, setActive] = useState(false)
   return (
@@ -14,7 +15,7 @@ export function Welcome() {
       <h1 className="flex justify-center font-rubik text-2xl font-medium text-blue-900 sm:text-3xl md:text-4xl lg:text-6xl">
         Selamat Datang
       </h1>
-      <h1 className="text-stroke-trick absolute left-[50%] top-24 flex translate-x-[-50%] justify-center font-damion text-2xl font-medium text-blue-400 sm:text-3xl md:text-4xl lg:top-28 lg:text-6xl">
+      <h1 className="text-stroke-trick flex justify-center font-damion text-2xl font-medium text-blue-400 sm:text-3xl md:text-4xl lg:top-28 lg:text-6xl">
         Gamada!
       </h1>
       <div className="flex flex-col-reverse items-center justify-center gap-x-5 px-5 py-20 lg:flex-row">
@@ -46,9 +47,9 @@ export function Welcome() {
                     width="64"
                     height="64"
                     filterUnits="userSpaceOnUse"
-                    color-interpolation-filters="sRGB"
+                    colorInterpolationFilters="sRGB"
                   >
-                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feFlood floodOpacity="0" result="BackgroundImageFix" />
                     <feColorMatrix
                       in="SourceAlpha"
                       type="matrix"
@@ -127,9 +128,9 @@ export function Welcome() {
                     width="64"
                     height="64"
                     filterUnits="userSpaceOnUse"
-                    color-interpolation-filters="sRGB"
+                    colorInterpolationFilters="sRGB"
                   >
-                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feFlood floodOpacity="0" result="BackgroundImageFix" />
                     <feColorMatrix
                       in="SourceAlpha"
                       type="matrix"
@@ -182,14 +183,9 @@ export function Welcome() {
             </div>
           </div>
         </div>
-        <div
-          dangerouslySetInnerHTML={{
-            __html: ``,
-          }}
-        />
         <iframe
           className={`h-[200px] w-full rounded-2xl border-4 border-blue-500 sm:h-[250px] sm:max-w-sm md:h-[200px] md:max-w-md lg:h-[300px] lg:max-w-lg xl:h-[250px] xl:w-[500px] ${
-            active == true ? 'hidden' : 'block'
+            active === true ? 'hidden' : 'block'
           }`}
           src=""
           title="Sambutan Koordinator Umum"
@@ -215,7 +211,7 @@ export function Welcome() {
         />
         <iframe
           className={`h-[200px] w-full rounded-2xl border-4 border-blue-500 sm:h-[250px] sm:max-w-sm md:h-[200px] md:max-w-md lg:h-[300px] lg:max-w-lg xl:h-[250px] xl:w-[500px] ${
-            active == true ? 'block' : 'hidden'
+            active === true ? 'block' : 'hidden'
           }`}
           src=""
           title="Sambutan Rektor UGM"
@@ -256,7 +252,7 @@ export function Welcome() {
             nostra, per inceptos himenaeos. Praesent auctor purus luctus enim egestas, ac
             scelerisque ante pulvinar.
           </p>
-          <button className="w-1/2 rounded-xl border-2 border-orange-500 bg-orange-500 px-5 py-3 font-rubik text-[12px] font-bold text-white duration-300 hover:border-2 hover:border-orange-500 hover:bg-white hover:text-orange-500 md:text-xl xl:text-2xl sm:text-[24px]">
+          <button className="w-1/2 rounded-xl border-2 border-orange-500 bg-orange-500 px-5 py-3 font-rubik text-[12px] font-bold text-white duration-300 hover:border-2 hover:border-orange-500 hover:bg-white hover:text-orange-500 sm:text-[24px] md:text-xl xl:text-2xl">
             Lihat Selengkapnya
           </button>
         </div>
