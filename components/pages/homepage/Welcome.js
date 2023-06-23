@@ -20,9 +20,10 @@ export function Welcome() {
       </h1>
       <div className="flex flex-col-reverse items-center justify-center gap-x-5 px-5 py-20 lg:flex-row">
         <div className="grid grid-cols-2 gap-x-5 gap-y-5 p-5 lg:flex lg:flex-col">
-          <div
+          <button
             className="rounded-2xl border-4 border-orange-500 bg-white  shadow-[1px_1px_4px_0px_#000000] duration-300 hover:scale-[101%] hover:cursor-pointer"
             onClick={() => setActive(true)}
+            type="button"
           >
             <div className="flex flex-row items-center px-3 py-1 lg:px-5 lg:py-3">
               <svg
@@ -100,10 +101,11 @@ export function Welcome() {
                 </h1>
               </div>
             </div>
-          </div>
-          <div
+          </button>
+          <button
             className="rounded-2xl border-4 border-blue-300 bg-white  shadow-[1px_1px_4px_0px_#000000] duration-300 hover:scale-[101%] hover:cursor-pointer"
             onClick={() => setActive(false)}
+            type="button"
           >
             <div className="flex flex-row items-center justify-start px-3 py-1 lg:px-5 lg:py-3">
               <svg
@@ -181,7 +183,7 @@ export function Welcome() {
                 </h1>
               </div>
             </div>
-          </div>
+          </button>
         </div>
         <iframe
           className={`h-[200px] w-full rounded-2xl border-4 border-blue-500 sm:h-[250px] sm:max-w-sm md:h-[200px] md:max-w-md lg:h-[300px] lg:max-w-lg xl:h-[250px] xl:w-[500px] ${
@@ -252,7 +254,10 @@ export function Welcome() {
             nostra, per inceptos himenaeos. Praesent auctor purus luctus enim egestas, ac
             scelerisque ante pulvinar.
           </p>
-          <button className="w-1/2 rounded-xl border-2 border-orange-500 bg-orange-500 px-5 py-3 font-rubik text-[12px] font-bold text-white duration-300 hover:border-2 hover:border-orange-500 hover:bg-white hover:text-orange-500 sm:text-[24px] md:text-xl xl:text-2xl">
+          <button
+            className="w-1/2 rounded-xl border-2 border-orange-500 bg-orange-500 px-5 py-3 font-rubik text-[12px] font-bold text-white duration-300 hover:border-2 hover:border-orange-500 hover:bg-white hover:text-orange-500 sm:text-[24px] md:text-xl xl:text-2xl"
+            type="button"
+          >
             Lihat Selengkapnya
           </button>
         </div>
