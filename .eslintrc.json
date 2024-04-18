@@ -38,6 +38,7 @@
     "import/first": "error",
     "import/newline-after-import": "error",
     "import/no-duplicates": "error",
-    "import/no-extraneous-dependencies": 1
+    "import/no-extraneous-dependencies": 1,
+    "react/jsx-props-no-spreading": "off"
   }
 }

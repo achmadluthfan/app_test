@@ -1,14 +1,13 @@
-/* eslint-disable react/prop-types */
-/* eslint-disable react/jsx-props-no-spreading */
-/* eslint-disable import/no-unresolved */
 import '../styles/globals.css'
-import '../styles/Navbar.css'
+import '../styles/navbar.css'
 import 'swiper/css'
 import 'swiper/css/effect-coverflow'
 import 'swiper/css/pagination'
 
 import Head from 'next/head'
 import Script from 'next/script'
+
+import SubsProvider from './services/subscription/SubsProvider'
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -29,7 +28,9 @@ function MyApp({ Component, pageProps }) {
           gtag('config', 'G-0V1HL98QPD');
         `}
       </Script>
-      <Component {...pageProps} />
+      <SubsProvider>
+        <Component {...pageProps} />
+      </SubsProvider>
     </>
   )
 }

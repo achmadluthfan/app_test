@@ -1,3 +1,5 @@
+import { useContext, useEffect } from 'react'
+
 import { DefaultLayout } from '../components/layout'
 import {
   ARLayout,
@@ -8,8 +10,18 @@ import {
   Rangkaian,
   Welcome,
 } from '../components/pages/homepage'
+import SubsContext from './services/Context'
 
 export default function Home() {
+  const { init } = useContext(SubsContext)
+
+  useEffect(() => {
+    const go = async () => {
+      await init()
+    }
+    go()
+  }, [])
+
   return (
     <DefaultLayout title="PPSMB UGM 2023">
       <Hero />
